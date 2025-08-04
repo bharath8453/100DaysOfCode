@@ -67,9 +67,7 @@ class BinaryTree:
             if temp.right:
                 queue.append(temp.right)
         return False
-
-
-# ----------- Example Usage -------------
+        
 if __name__ == "__main__":
     bt = BinaryTree()
     bt.insert(10)
@@ -88,4 +86,5 @@ if __name__ == "__main__":
     bt.postorder(bt.root)
 
     print("\n\nSearch for 30:", "Found" if bt.search(30) else "Not Found")
+
     print("Search for 100:", "Found" if bt.search(100) else "Not Found")
